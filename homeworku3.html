@@ -23,7 +23,7 @@
     </script>
 
     <!-- load javascript file for answer toggle buttons and functions to hide and show emphasis tags -->
-    <script src="js/mathscripts.js"></script>
+    <script src="js/togglebuttons.js"></script>
 
     <!-- load javascript file to populate graph data from Desmos API. -->
     <script src="js/desmosgraphs.js"></script>
@@ -37,7 +37,20 @@
   ga('send', 'pageview');
 
 </script>
+<style>
+/*#u3s1 .m1830-solution { display: block;}*/
 
+/*#u3s2 .m1830-solution {display: block;}*/
+
+/*#u3s4 .m1830-solution {display: block;}*/
+
+/*#u3s5 .m1830-solution {display: block;}*/
+/*#u3s6 .m1830-solution {display: block;}*/
+/*#u3s7a .m1830-solution {display: block;}*/
+/*#u3s7b .m1830-solution {display: block;}*/
+
+
+</style>
 </head>
 <body>
 
@@ -51,7 +64,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
            </button>
-           <a class="navbar-brand" href="https://psccmath.github.io/math1830">MATH 1830</a>
+           <a class="navbar-brand" href="https://psccmath.github.io/math1830/">MATH 1830</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -96,7 +109,7 @@
 
                  </ul>
               </li>
-              <li class="dropdown">
+              <!-- <li class="dropdown">
                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Toggle<span class="caret"></span></a>
                  <ul class="dropdown-menu">
                     <li><a href="#" onclick="togglesolutions();return false;">Solutions</a></li>
@@ -105,7 +118,7 @@
 
 
                  </ul>
-              </li>
+              </li> -->
            </ul>
 
         </div>
@@ -262,8 +275,9 @@
                             <li>
                                 <p> Determine the intervals on which $A(t)$ is increasing/decreasing
                                     <p>
-                                        <p class="m1830-answer">Increasing: $\left( 0,1.20 \right)\cup \left( 3.10,5.23 \right)$ APR increased from 2008 into 2009 and from 2011 into 2013.</p>
-                                        <p class="m1830-answer m1830-step">Decreasing: $\left( 1.20,3.10 \right)\cup \left( 5.23,6 \right)$ APR decreased from 2009 into 2011 and in 2013.</p>
+                                        <p class="m1830-answer">Increasing: $\left( 0,1.20 \right)\cup \left( 3.10,5.23 \right)$ </p>
+                                        <p class="m1830-answer">APR increased from 2008 into 2009 and from 2011 into 2013.</p>
+                                        <p class="m1830-answer m1830-step">Decreasing: $\left( 1.20,3.10 \right)\cup \left( 5.23,6 \right)$ </p><p class="m1830-answer">APR decreased from 2009 into 2011 and in 2013.</p>
 
 
                                         <p>Identify local maxima and minima for $A(t)$.</p>
@@ -374,7 +388,7 @@
                 <p class="m1830-problem-text">Analyze the following function.
                     <p class="m1830-problem-text">Using data from Statista, the total annual amount spent on the purchase of golf equipment in the United States for the years 2008-2014 can be modeled by the following equation:</p>
                     <p>$$A(t)=-31.94{{t}^{3}}+301.16{{t}^{2}}-665.61t+3454.63$$ where t is in years since 2008 and A(t) is in millions of dollars</p>
-                    <p><cite> Source: <a href="http://www.statista.com/statistics/201038/purchases-of-golf-equipment-in-the-us-since-2007/">http://www.statista.com/statistics/201038/purchases-of-golf-equipment-in-the-us-since-2007/</a> </cite></p>
+                    <p><cite> Source: <a href="https://www.statista.com/statistics/201038/purchases-of-golf-equipment-in-the-us-since-2007/">http://www.statista.com/statistics/201038/purchases-of-golf-equipment-in-the-us-since-2007/</a> </cite></p>
                     <ol>
 
                         <li> Analyze $A(t)$
@@ -399,7 +413,7 @@
                                     <p>Evaluate and interpret the y intercept of $A(t)$.</p>
                                     <p class="m1830-solution">$A\left( 0 \right)=-31.94{{\left( 0 \right)}^{3}}+301.16{{\left( 0 \right)}^{2}}-665.61\left( 0 \right)+3454.63=3454.63$</p>
                                     <p class="m1830-answer">$(0,3454.63)$</p>
-                                    <p class="m1830-answer">In 2008, the total amount spent on golf equipment in the United States was approximately \$3454.63.</p>
+                                    <p class="m1830-answer">In 2008, the total amount spent on golf equipment in the United States was approximately \$3454.63 million dollars.</p>
                                 </li>
 
                                 <li>
@@ -430,7 +444,7 @@
                                     <p>Values of t where ${A}\left( t \right)$ is undefined.</p>
                                     <p class="m1830-answer">There are no values of t where $A\left( t \right)$is undefined.</p>
                                     <p class="m1830-answer"><img src="images/hw/u3s2p1a.png" alt="Graph of the first derivative of the function A of t"></p>
-                                    <p class="m1830-answer m1830-step">Sign chart for ${A}&#39;\left( t \right)$ reading left to right: negative, ${A}&#39;\left( 1.43 \right)\approx 0$, positive, ${A}&#39;\left( 4.86 \right)\approx 0$, negative</p>
+                                    <p class="m1830-answer">Sign chart for ${A}&#39;\left( t \right)$ reading left to right: </p> <p class="m1830-answer"> negative, ${A}&#39;\left( 1.43 \right)\approx 0$, positive, ${A}&#39;\left( 4.86 \right)\approx 0$, negative</p>
                                 </li>
 
                                 <li>
@@ -609,11 +623,12 @@
                     </li>
 
                     <li class="m1830-problem">
-                        <p class="m1830-problem-text"> A container company is designing on open-top, square-based, rectangular box that will have a volume of 62.5 cm3. Express the surface area of the box as a function of its width.</p>
+                        <p class="m1830-problem-text"> A container company is designing on open-top, square-based, rectangular box that will have a volume of 62.5 $cm^3$. Express the surface area of the box as a function of its width.</p>
 
                         <p class="m1830-solution">$V=lwh={{w}^{2}}h$</p>
                         <p class="m1830-solution">$62.5={{w}^{2}}h$</p>
                         <p class="m1830-solution">$h=\frac{62.5}{{{w}^{2}}}$</p>
+  <p class="m1830-solution">$SA=2lw+2lh+2wh$</p>
                         <p class="m1830-solution">$SA={{w}^{2}}+2wh+2wh$</p>
                         <p class="m1830-solution">$SA={{w}^{2}}+4wh$</p>
                         <p class="m1830-solution">$SA={{w}^{2}}+4w\left( \frac{62.5}{{{w}^{2}}} \right)$</p>
@@ -634,7 +649,7 @@
                     </li>
 
                     <li class="m1830-problem">
-                        <p class="m1830-problem-text"> A cylindrical soup can has a volume of 355 cm3. Express the surface area as a function of the radius.</p>
+                        <p class="m1830-problem-text"> A cylindrical soup can has a volume of 355 $cm^3$. Express the surface area as a function of the radius.</p>
 
                         <p class="m1830-solution">$ V=355c{{m}^{3}} $</p>
                         <p class="m1830-solution">$ V=355=\pi {{r}^{2}}h $</p>
@@ -647,7 +662,7 @@
                     </li>
 
                     <li class="m1830-problem">
-                        <p class="m1830-problem-text"> A box (with a top) that has a square base has a surface area of 70 cm2. Express the volume as a function of the width.</p>
+                        <p class="m1830-problem-text"> A box (with a top) that has a square base has a surface area of 70 $cm^2$. Express the volume as a function of the width.</p>
 
                         <p class="m1830-solution">$SA=2lw+2lh+2wh$</p>
                         <p class="m1830-solution">$ SA=2({{x}^{2}}+xh+xh) $</p>
@@ -667,15 +682,16 @@
                         <p class="m1830-problem-text"> A rectangular pen is to be built with 1200 m of fencing. The pen is to be divided into three parts using parallel partitions. Find a formula for the area of the pen.</p>
 
                         <p class="m1830-solution">$A=l\cdot w$</p>
+                        <p class="m1830-solution">$A=\left(\frac{1200-4x}2\right)x$ </p>
                         <p class="m1830-solution">$ A=(600-2x)(x) $</p>
                         <p class="m1830-answer">$ A=600x-2{{x}^{2}}$</p>
 
                     </li>
 
                     <li class="m1830-problem">
-                        <p class="m1830-problem-text"> A cylindrical can is to have a volume of 900 cm³. The metal costs $15.50/cm². Find a formula for the cost of the can in terms of r.</p>
+                        <p class="m1830-problem-text"> A cylindrical can has a volume of 900 $cm^3$. The metal costs $15.50/cm². Find a formula for the cost of the can in terms of r.</p>
 
-                        <p class="m1830-solution">$V=900cm$</p>
+                        <p class="m1830-solution">$V=900 cm^3$</p>
                         <p class="m1830-solution">$ V=\pi {{r}^{2}}h$</p>
                         <p class="m1830-solution">$ 900=\pi {{r}^{2}}h$</p>
                         <p class="m1830-solution">$ \frac{900}{\pi {{r}^{2}}}=h$</p>
