@@ -1,7 +1,7 @@
 @media print {
     body {
         background: none;
-        font-size: 16px;
+        /*font-size: 16px;*/
     }
     a {
         text-decoration: none;
@@ -9,6 +9,11 @@
     }
     a[href]:after {
         content: none;
+    }
+
+    article.hw{
+        page-break-before: always;
+
     }
     .m1830-section {
         page-break-before: always;
@@ -23,20 +28,42 @@
     .m1830-pagebreak {
       page-break-before: always;
     }
-    /*.m1830-unit {
-        page-break-before: always;
-    }*/
-    /*strong {
-      page-break-before: always;
-    }*/
     iframe {
         display: none;
     }
     img {
         display: block;
         page-break-inside: avoid;
+        max-width: 400px !important;
+        margin-left: 0;
     }
     video {
         display: none;
     }
+
+    /*.m1830-answer *, .m1830-answer *:before, .m1830-answer *:after {
+        color: #b30000 !important;
+    }
+
+    .m1830-hw-answer *, .m1830-hw-answer *:before, .m1830-hw-answer *:after{
+        color: #b30000 !important;
+    }
+
+    .m1830-solution *, .m1830-hw-solution * {
+        color: blue !important;
+    }*/
+
+    /*.m1830-answer, .m1830-solution {
+        display: block;*/
+         /*visibility: hidden;*/
+    /*}*/
+
+    /*.m1830-hw-answer, .m1830-hw-solution {*/
+
+     /*display: none;*/
+    /*}*/
+
+    /*.m1830-answer img, .m1830-solution img {*/
+    /*display:none;*/
+    /*}*/
 }
