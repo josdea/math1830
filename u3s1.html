@@ -2,25 +2,64 @@
 <html lang="en">
 
 <head>
-    <title>MATH 1830 Notes</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/notes.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="js/togglebuttons.js"></script>
-    <script src="js/loadmathjax.js"></script>
-   <script src="js/googlestats.js"></script>     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>     <script src="js/nav.js"></script>     <script src="js/togglepass.js"></script>
-    <!-- <script src="https://www.desmos.com/api/v0.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
-    <script src="js/desmosgraphs.js"></script> -->
-
-
+  <title>MATH 1830 Notes</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 4 Styling -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Font Awesome 5 Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Load Mathjax After the Page Loads -->
+  <script src="js/loadmathjax.js"></script>
 </head>
 
 <body>
- <nav ng-app="myApp" ng-controller="myCtrl" class="navbar navbar-default navbar-fixed-top">          <div class="container-fluid">              <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"                     aria-expanded="false">              <span class="sr-only">Toggle navigation</span>              <span class="icon-bar"></span>              <span class="icon-bar"></span>              <span class="icon-bar"></span>           </button> <a class="navbar-brand" ng-href="{{nav.titleUrl}}">{{nav.title}}</a> </div>              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">                 <ul class="nav navbar-nav">                      <li ng-repeat="u in nav.unit" class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"                             title="{{u.title}}">{{u.title}}<span class="caret"></span></a>                         <ul class="dropdown-menu">                             <li ng-repeat="n in u.nav"><a ng-href="{{n.url}}">{{n.urlText}}</a></li>                           </ul>                     </li>                  </ul>                 <ul class="nav navbar-nav navbar-right">                     <form class="navbar-form navbar-left">                         <div class="form-group">                             <input id="input" type="password" class="form-control" placeholder="pin-code">                         </div>                         <button id="submit" type="submit" class="btn btn-default">Show Solutions</button>                     </form>                   </ul>             </div>         </div>     </nav>
-
-
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"> <a class="navbar-brand" href="https://psccmath.github.io/math1830/">Math 1830</a> <button class="navbar-toggler"
+      type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+      aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false"> Unit 1 </a> <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="u1s1.html">1.1 Finding Limits Graphically</a><a class="dropdown-item"
+              href="u1s2.html">1.2 Finding Limits Algebraically/Infinite Limits</a><a class="dropdown-item"
+              href="u1s3.html">1.3 Continuity</a><a class="dropdown-item" href="u1s4.html">1.4 Definition
+              of Derivatives</a><a class="dropdown-item" href="u1s5.html">1.5 Derivatives: The Power
+              Rule</a><a class="dropdown-item" href="u1s6.html">1.6 Marginal Analysis in Business and
+              Economics</a> </div>
+        </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false"> Unit 2 </a> <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="u2s1.html">2.1 Exponential and Logarithmic Function Applications</a><a
+              class="dropdown-item" href="u2s2.html">2.2 Derivatives of Exponential and Logarithmic Functions</a><a
+              class="dropdown-item" href="u2s3.html">2.3 Derivatives of Products</a><a class="dropdown-item"
+              href="u2s4.html">2.4 Derivatives of Quotients</a><a class="dropdown-item" href="u2s5.html">2.5
+              The Chain Rule</a> </div>
+        </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false"> Unit 3 </a> <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="u3s1.html">3.1 Analyzing Graphs Algebraically</a><a class="dropdown-item"
+              href="u3s2.html">3.2 The First Derivative Test</a><a class="dropdown-item" href="u3s3.html">3.3
+              The Second Derivative Test</a><a class="dropdown-item" href="u3s4.html">3.4 Summary of
+              Curve Sketching</a><a class="dropdown-item" href="u3s5.html">3.5 Absolute Extrema</a><a
+              class="dropdown-item" href="u3s6.html">3.6 Introduction to Optimization</a><a class="dropdown-item"
+              href="u3s7.html">3.7 Optimization in Packaging: Cans</a><a class="dropdown-item" href="u3s8.html">3
+              8 Optimization in Packaging: Boxes</a> </div>
+        </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false"> Unit 4 </a> <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="u4s1.html">4.1 Area by Sums</a><a class="dropdown-item" href="u4s2.html">4.2
+              The Fundamental Theorem of Calculus</a><a class="dropdown-item" href="u4s3.html">4.3 Indefinite
+              Integrals</a><a class="dropdown-item" href="u4s4.html">4.4 Integration by Substitution</a><a
+              class="dropdown-item" href="u4s5.html">4.5 The Area Between Curves</a> </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
     <div class="container">
         <h1 id="u3toc">MATH 1830 Notes</h1>
 
@@ -88,7 +127,7 @@
    <div class="col-sm-2">
    <a href="https://www.myopenmath.com/" target="_blank">
    <div class="box " tabindex="0">
-   <i class="fa fa-line-chart fa-3x "></i>
+   <i class="fa fa-chart-line fa-3x "></i>
    <p>3.1 Quiz</p>
    </div>
    </a>
@@ -97,7 +136,7 @@
 <div class="col-sm-2">
    <a href="#ar" target="_blank">
    <div class="box " tabindex="0">
-     <i class="fa fa-pencil-square fa-3x "></i>
+     <i class="fa fa-pencil-ruler fa-3x "></i>
      <p>Resources</p>
    </div>
    </a>
@@ -494,7 +533,7 @@
           <h4> Additional Resources</h4>
 <ul>
 <!-- <li>
-  <a href="pdfs/u2chainrulews.pdf" target="_blank"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Chain Rule Worksheet</a> 
+  <a href="pdfs/u2chainrulews.pdf" target="_blank"><i class="fa fa-pencil-ruler-o" aria-hidden="true"></i> Chain Rule Worksheet</a> 
 </li> -->
 
 <li>
@@ -514,6 +553,13 @@
 
     </div>
     <!-- ending of body container -->
-</body>
-
-</html>
+    <!-- ending of body container -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  </body>
+  
+  </html>

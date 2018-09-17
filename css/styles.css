@@ -1,5 +1,19 @@
 @media print {
+  html {
+    font-size: 18px;
+  }
   .container {
     width: auto;
+  }
+  .m-buttons,
+  .m1830-solution,
+  .m1830-answer,
+  .m1830-hw-solution,
+  .m1830-hw-answer,
+  .add-resources {
+    display: none;
+  }
+  .m1830-problem {
+    margin-bottom: 60px;
   }
 }
