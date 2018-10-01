@@ -1,6 +1,6 @@
 @media print {
   html {
-    font-size: 18px;
+    font-size: 20px;
   }
   .container {
     width: auto;
@@ -16,4 +16,15 @@
   .m1830-problem {
     margin-bottom: 60px;
   }
+
+  .page-break-before{
+    page-break-before: always;
+  }
+  .page-break-after{
+    page-break-after: always;
+  }
+}
+
+ol li ol{
+  list-style-type: lower-alpha; 
 }
